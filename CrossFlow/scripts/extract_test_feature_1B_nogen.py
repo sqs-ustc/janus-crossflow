@@ -56,9 +56,9 @@ def center_crop_arr(pil_image, image_size):
 def main(bz = 4):
     device = "cuda:7"
 
-    json_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_dataset_f10px512/img_img_pair.jsonl'
-    image_root_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_dataset_f10px512/imgs'
-    render_root_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_dataset_f10px512/render_imgs'
+    json_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_testset_f10px512/img_img_pair.jsonl'
+    image_root_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_testset_f10px512/imgs'
+    render_root_path = '/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_testset_f10px512/render_imgs'
     # specify the path to the model
     model_path = "deepseek-ai/Janus-Pro-1B"
     vl_chat_processor: VLChatProcessor = VLChatProcessor.from_pretrained(model_path)
@@ -75,7 +75,7 @@ def main(bz = 4):
         for line in file:
             dicts_list.append(json.loads(line))
 
-    save_dir = f'/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_dataset_f10px512/features'
+    save_dir = f'/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_testset_f10px512/features'
     
     recreate_folder(save_dir)
 
@@ -142,10 +142,10 @@ def main(bz = 4):
         inputs_embeds = vl_gpt.prepare_inputs_embeds(**prepare_inputs)  #modeling_vlm.py changed! only return image_embeds
 
         #inputs_embeds.shape:torch.Size([1, 576, 2048])
-       # attention_mask = [1] * len(inputs_embeds[0]) # [576个1]
-        attention_mask = [1] * 77 
+        #attention_mask = [1] * len(inputs_embeds[0]) # [576个1]
+        attention_mask = [1] * 77
         final_tensor = inputs_embeds.squeeze(dim=0)  # 形状变为 [576, 2048]
-        final_tensor = final_tensor[:77, :]
+        final_tensor = final_tensor[:77,:]
         batch_final_tensor.append(final_tensor.detach().cpu().float().numpy())
         batch_attention_mask.append(attention_mask)
 

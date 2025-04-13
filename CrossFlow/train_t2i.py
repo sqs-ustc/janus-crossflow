@@ -18,6 +18,8 @@ import numpy as np
 import time
 import random
 
+#os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:21"
+
 import libs.autoencoder
 from libs.t5 import T5Embedder
 from libs.clip import FrozenCLIPEmbedder
@@ -97,12 +99,6 @@ def train(config):
         print("config.nnet.model_args.clip_dim:",config.nnet.model_args.clip_dim)
         print("Using Janus-Pro-7B")
     elif config.nnet.model_args.clip_dim == 768:
-        llm = "clip"
-        clip = FrozenCLIPEmbedder()
-        clip.eval()
-        clip.to(device)
-        print("Using clip")
-    elif config.nnet.model_args.clip_dim == 2048:
         llm = "Janus-Pro-1B"
         print("Using Janus-Pro-1B")
     else:
@@ -175,10 +171,6 @@ def train(config):
         _z = autoencoder.sample(_batch_img) 
 #        print("_z.shape:",_z.shape)
         with accelerator.accumulate(nnet):    
-            after = torch.cuda.memory_allocated('cuda:0')
-#            print("into train后GPU0显存变至{}".format(after - before))
-            after = torch.cuda.memory_allocated('cuda:1')
-#            print("into train后GPU1显存变至{}".format(after - before))
             loss, loss_dict = _flow_mathcing_model(_z, nnet, loss_coeffs=config.loss_coeffs, cond=_batch_con, con_mask=_batch_mask, batch_img_clip=_batch_img_ori, \
             nnet_style=config.nnet.name, text_token=None, model_config=config.nnet.model_args, all_config=config, training_step=train_state.step)
 

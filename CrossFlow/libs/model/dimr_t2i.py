@@ -307,6 +307,14 @@ class MRModel(nn.Module):
         super().__init__()
         self.channels = config.channels
         self.block_grad_to_lowres = config.block_grad_to_lowres
+        ########### 新增适配层 ###########
+
+#        self.adapter =  nn.Sequential(
+#        nn.Linear(config.adapter_in_embed, config.clip_dim),
+#    )
+
+        # nn.Linear(77*2048, 77*768), 全连接降维 [B, 77*2048]输入  [B, 77*768]输出
+        ###############################
 
         for stage_config in config.stage_configs:
             if hasattr(config, "use_t2i"):
@@ -434,7 +442,9 @@ class MRModel(nn.Module):
     
     def forward(self, x, t = None, log_snr = None, text_encoder=False, text_decoder=False, image_clip=False, shape=None, mask=None, null_indicator=None):
         if text_encoder:
-            return self._text_encoder(condition_context = x, tar_shape=shape, mask=mask)
+            # 应用适配层 [B, 77, 2048] → [B, 77, 768]
+            adapted_cond = x #self.adapter(x)
+            return self._text_encoder(condition_context = adapted_cond, tar_shape=shape, mask=mask)
         elif text_decoder:
             return self._text_decoder(condition_enbedding = x, tar_shape=shape) # mask is not needed for decoder
         elif image_clip:

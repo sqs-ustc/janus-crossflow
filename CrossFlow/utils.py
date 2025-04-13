@@ -78,8 +78,10 @@ def get_optimizer(params, name, **kwargs):
         from torch.optim import Adam
         return Adam(params, **kwargs)
     elif name == 'adamw':
-        from torch.optim import AdamW
-        return AdamW(params, **kwargs)
+#        from torch.optim import AdamW
+#        return AdamW(params, **kwargs)
+        from bitsandbytes.optim import AdamW8bit
+        return AdamW8bit(params, **kwargs)
     elif name == 'adafactor':
         from torch.optim import Adafactor
         return Adafactor(params, **kwargs)
@@ -180,6 +182,34 @@ def trainable_parameters(nnet):
 def initialize_train_state(config, device):
 
     nnet = get_nnet(**config.nnet)
+
+    try:
+        # 加载模型参数
+        state_dict = torch.load(config.pretrained_path, map_location='cpu')
+        
+        # 非严格模式加载（允许参数不匹配）
+        load_result = nnet.load_state_dict(state_dict, strict=False)
+        
+        # 检查缺失的键是否为adapter组件
+        missing_keys = load_result.missing_keys
+        adapter_keys = [k for k in missing_keys if "adapter" in k]
+        
+        if len(adapter_keys) == len(missing_keys):
+            print(f"成功加载基础参数，检测到 {len(adapter_keys)} 个adapter参数需要初始化")
+        else:
+            print(f"警告：存在预期外的缺失参数 {set(missing_keys) - set(adapter_keys)}")
+
+#        nn.init.xavier_uniform_(nnet.adapter[0].weight)
+#        nn.init.xavier_uniform_(nnet.adapter[1].weight)
+#        print("Adapter layer initialized")
+
+
+    except FileNotFoundError:
+        print(f"错误：找不到文件 '{config.pretrained_path}'，请检查路径是否正确。")
+
+    except Exception as e:
+        print(f"初始化失败: {str(e)}")
+
     nnet_ema = get_nnet(**config.nnet)
     nnet_ema.eval()
 

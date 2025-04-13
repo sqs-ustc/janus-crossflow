@@ -325,7 +325,7 @@ class TextImageDataset(Dataset):
 
 
         z = train_item[f'image_latent_{self.resolution}']
-        token_embedding = train_item[f'token_embedding_{self.llm}']
+        token_embedding = train_item[f'token_embedding_{self.llm}'][:,:768]
         #print("train/test token_embedding.shape:",token_embedding.shape,"note: shoule be (77, 2048)")
      #   token_embedding = token_embedding[:,:768]
         #print("token_embedding.shape:",token_embedding.shape,"note: shoule be (77, 768)")
@@ -370,7 +370,7 @@ class TextImageFeatures(DatasetFactory):  # the moments calculated by Stable Dif
             #print("vis_item['token_embedding'].shape:",vis_item['token_embedding'].shape,"note: shoule be (77, 2048)")
          #   truncated_embedding = vis_item['token_embedding'][:, :768]
             #print("truncated_embedding.shape:",truncated_embedding.shape,"note: shoule be (77, 768)")
-            self.token_embedding.append(vis_item['token_embedding'])
+            self.token_embedding.append(vis_item['token_embedding'][:,:768])
             self.token_mask.append(vis_item['token_mask'])
             # self.token.append(vis_item['token'])
         self.token_embedding = np.array(self.token_embedding)
