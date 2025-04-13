@@ -9,170 +9,170 @@ To avoid this warning pass in values for each of the problematic parameters or r
   warnings.warn(
 /opt/conda/envs/crossflow/lib/python3.8/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
   warnings.warn(
-I0412 16:19:27.008412 23263182075584 train_t2i.py:42] Process 0 using device: cuda:0
-I0412 16:19:27.009707 22552225937088 train_t2i.py:42] Process 1 using device: cuda:1
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692745 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692745 [0] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692745 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692745 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692745 [0] NCCL INFO cudaDriverVersion 12020
+I0413 11:37:55.190584 22748737742528 train_t2i.py:42] Process 0 using device: cuda:0
+I0413 11:37:55.364455 22945558685376 train_t2i.py:42] Process 1 using device: cuda:1
+I0413 11:37:55.438111 22780216329920 train_t2i.py:42] Process 2 using device: cuda:2
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696109 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696109 [0] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
+I0413 11:37:55.515876 23397965559488 train_t2i.py:42] Process 3 using device: cuda:3
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696109 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696109 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696109 [0] NCCL INFO cudaDriverVersion 12020
 NCCL version 2.18.6+cuda12.1
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692746 [1] NCCL INFO cudaDriverVersion 12020
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692746 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692746 [1] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692746 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692746 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
-I0412 16:19:27.377703 22538134849216 train_t2i.py:42] Process 3 using device: cuda:3
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692748 [3] NCCL INFO cudaDriverVersion 12020
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692748 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692748 [3] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692748 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692748 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
-I0412 16:19:27.396200 22942584932032 train_t2i.py:42] Process 2 using device: cuda:2
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692747 [2] NCCL INFO cudaDriverVersion 12020
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692747 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692747 [2] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692747 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692747 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO P2P plugin IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Using network IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO P2P plugin IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Using network IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO P2P plugin IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Using network IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO P2P plugin IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Using network IBext
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO comm 0xa4cd550 rank 3 nranks 4 cudaDev 3 nvmlDev 7 busId 800000 commId 0xf64efd25e0bafe7b - Init START
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO comm 0xacd4190 rank 2 nranks 4 cudaDev 2 nvmlDev 6 busId 700000 commId 0xf64efd25e0bafe7b - Init START
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO comm 0xafe7320 rank 1 nranks 4 cudaDev 1 nvmlDev 5 busId 600000 commId 0xf64efd25e0bafe7b - Init START
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO comm 0xb1f6ae0 rank 0 nranks 4 cudaDev 0 nvmlDev 4 busId 500000 commId 0xf64efd25e0bafe7b - Init START
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Setting affinity for GPU 5 to ff,fff00000
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO NVLS multicast support is not available on dev 1
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Setting affinity for GPU 6 to ff,fff00000
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO NVLS multicast support is not available on dev 2
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Setting affinity for GPU 7 to ff,fff00000
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO NVLS multicast support is not available on dev 3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Setting affinity for GPU 4 to ff,fff00000
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO NVLS multicast support is not available on dev 0
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] -1/-1/-1->1->2 [2] -1/-1/-1->1->2 [3] -1/-1/-1->1->3 [4] 2/-1/-1->1->0 [5] -1/-1/-1->1->2 [6] -1/-1/-1->1->2 [7] -1/-1/-1->1->3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 00/08 :    0   1   2   3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 01/08 :    0   3   2   1
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO P2P Chunksize set to 524288
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 02/08 :    0   3   1   2
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 03/08 :    0   2   1   3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 04/08 :    0   1   2   3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 05/08 :    0   3   2   1
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 06/08 :    0   3   1   2
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 07/08 :    0   2   1   3
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 3/-1/-1->0->-1 [2] 3/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 3/-1/-1->0->-1 [6] 3/-1/-1->0->-1 [7] 2/-1/-1->0->-1
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 1/-1/-1->2->3 [2] 1/-1/-1->2->3 [3] 3/-1/-1->2->0 [4] 3/-1/-1->2->1 [5] 1/-1/-1->2->3 [6] 1/-1/-1->2->3 [7] 3/-1/-1->2->0
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO P2P Chunksize set to 524288
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] 2/-1/-1->3->0 [2] 2/-1/-1->3->0 [3] 1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] 2/-1/-1->3->0 [6] 2/-1/-1->3->0 [7] 1/-1/-1->3->2
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO P2P Chunksize set to 524288
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO P2P Chunksize set to 524288
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 00/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 02/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 00/0 : 0[4] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 04/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 04/0 : 0[4] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 06/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 00/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 03/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 00/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 04/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 04/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 07/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 03/0 : 1[5] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 02/0 : 2[6] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 03/0 : 0[4] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 02/0 : 3[7] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 07/0 : 1[5] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 06/0 : 2[6] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 07/0 : 0[4] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 06/0 : 3[7] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 01/0 : 0[4] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 01/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 02/0 : 0[4] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 03/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 05/0 : 0[4] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 05/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 01/0 : 1[5] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 01/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Channel 06/0 : 0[4] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 07/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 05/0 : 1[5] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 05/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Connected all rings
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Connected all rings
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 01/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Connected all rings
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Connected all rings
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 05/0 : 1[5] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 01/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 02/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 03/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 05/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 06/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 01/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 07/0 : 2[6] -> 3[7] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 02/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 05/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 06/0 : 3[7] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 03/0 : 2[6] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 03/0 : 3[7] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 07/0 : 2[6] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 07/0 : 3[7] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 00/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 02/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 03/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 04/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 00/0 : 1[5] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 06/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Channel 04/0 : 1[5] -> 0[4] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Channel 07/0 : 3[7] -> 2[6] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 00/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 02/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 04/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Channel 06/0 : 2[6] -> 1[5] via P2P/IPC
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO Connected all trees
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO Connected all trees
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO Connected all trees
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO Connected all trees
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
-4ebf64dcfb814391b20452c5eacea59200001W:692748:692815 [3] NCCL INFO comm 0xa4cd550 rank 3 nranks 4 cudaDev 3 nvmlDev 7 busId 800000 commId 0xf64efd25e0bafe7b - Init COMPLETE
-4ebf64dcfb814391b20452c5eacea59200001W:692746:692813 [1] NCCL INFO comm 0xafe7320 rank 1 nranks 4 cudaDev 1 nvmlDev 5 busId 600000 commId 0xf64efd25e0bafe7b - Init COMPLETE
-4ebf64dcfb814391b20452c5eacea59200001W:692745:692812 [0] NCCL INFO comm 0xb1f6ae0 rank 0 nranks 4 cudaDev 0 nvmlDev 4 busId 500000 commId 0xf64efd25e0bafe7b - Init COMPLETE
-4ebf64dcfb814391b20452c5eacea59200001W:692747:692817 [2] NCCL INFO comm 0xacd4190 rank 2 nranks 4 cudaDev 2 nvmlDev 6 busId 700000 commId 0xf64efd25e0bafe7b - Init COMPLETE
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696112 [3] NCCL INFO cudaDriverVersion 12020
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696111 [2] NCCL INFO cudaDriverVersion 12020
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696110 [1] NCCL INFO cudaDriverVersion 12020
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696112 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696110 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696111 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696112 [3] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696110 [1] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696111 [2] NCCL INFO Bootstrap : Using eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696112 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696112 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696111 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696111 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696110 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696110 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO P2P plugin IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Using network IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO P2P plugin IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Using network IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO P2P plugin IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Using network IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Plugin Path : /opt/nccl-rdma-sharp-plugins/lib/libnccl-net.so
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO P2P plugin IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to eth0
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO NET/IB : Using [0]mlx5_ib0:1/IB [RO]; OOB eth0:10.0.0.7<0>
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Using network IBext
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO comm 0xaea8e80 rank 2 nranks 4 cudaDev 2 nvmlDev 6 busId 700000 commId 0x23c605672137ad06 - Init START
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO comm 0x9523a10 rank 0 nranks 4 cudaDev 0 nvmlDev 4 busId 500000 commId 0x23c605672137ad06 - Init START
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO comm 0xb12c8e0 rank 1 nranks 4 cudaDev 1 nvmlDev 5 busId 600000 commId 0x23c605672137ad06 - Init START
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO comm 0xa409020 rank 3 nranks 4 cudaDev 3 nvmlDev 7 busId 800000 commId 0x23c605672137ad06 - Init START
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Setting affinity for GPU 6 to ff,fff00000
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO NVLS multicast support is not available on dev 2
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Setting affinity for GPU 4 to ff,fff00000
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO NVLS multicast support is not available on dev 0
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Setting affinity for GPU 5 to ff,fff00000
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO NVLS multicast support is not available on dev 1
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Setting affinity for GPU 7 to ff,fff00000
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO NVLS multicast support is not available on dev 3
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 00/08 :    0   1   2   3
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 01/08 :    0   3   2   1
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 02/08 :    0   3   1   2
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 03/08 :    0   2   1   3
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 04/08 :    0   1   2   3
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 05/08 :    0   3   2   1
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 06/08 :    0   3   1   2
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 07/08 :    0   2   1   3
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] 2/-1/-1->3->0 [2] 2/-1/-1->3->0 [3] 1/-1/-1->3->2 [4] -1/-1/-1->3->2 [5] 2/-1/-1->3->0 [6] 2/-1/-1->3->0 [7] 1/-1/-1->3->2
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 3/-1/-1->0->-1 [2] 3/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 1/-1/-1->0->-1 [5] 3/-1/-1->0->-1 [6] 3/-1/-1->0->-1 [7] 2/-1/-1->0->-1
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO P2P Chunksize set to 524288
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO P2P Chunksize set to 524288
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] -1/-1/-1->1->2 [2] -1/-1/-1->1->2 [3] -1/-1/-1->1->3 [4] 2/-1/-1->1->0 [5] -1/-1/-1->1->2 [6] -1/-1/-1->1->2 [7] -1/-1/-1->1->3
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO P2P Chunksize set to 524288
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 1/-1/-1->2->3 [2] 1/-1/-1->2->3 [3] 3/-1/-1->2->0 [4] 3/-1/-1->2->1 [5] 1/-1/-1->2->3 [6] 1/-1/-1->2->3 [7] 3/-1/-1->2->0
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO P2P Chunksize set to 524288
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 00/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 03/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 00/0 : 0[4] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 04/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 04/0 : 0[4] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 07/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 00/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 02/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 04/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 00/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 06/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 04/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 03/0 : 0[4] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 03/0 : 1[5] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 02/0 : 3[7] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 02/0 : 2[6] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 07/0 : 0[4] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 07/0 : 1[5] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 06/0 : 3[7] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 06/0 : 2[6] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 01/0 : 0[4] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 01/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 02/0 : 0[4] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 03/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 01/0 : 1[5] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 01/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 05/0 : 0[4] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 05/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 05/0 : 1[5] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 05/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Channel 06/0 : 0[4] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 07/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Connected all rings
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Connected all rings
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 01/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Connected all rings
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Connected all rings
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 05/0 : 1[5] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 01/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 02/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 03/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 05/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 01/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 06/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 02/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 07/0 : 2[6] -> 3[7] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 05/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 06/0 : 3[7] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 03/0 : 2[6] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 03/0 : 3[7] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 07/0 : 2[6] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 07/0 : 3[7] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 00/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 02/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 03/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 04/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 06/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 00/0 : 1[5] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Channel 07/0 : 3[7] -> 2[6] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Channel 04/0 : 1[5] -> 0[4] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 00/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 02/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 04/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Channel 06/0 : 2[6] -> 1[5] via P2P/IPC
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO Connected all trees
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO Connected all trees
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO Connected all trees
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO Connected all trees
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO 8 coll channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+4ebf64dcfb814391b20452c5eacea59200001W:696111:696179 [2] NCCL INFO comm 0xaea8e80 rank 2 nranks 4 cudaDev 2 nvmlDev 6 busId 700000 commId 0x23c605672137ad06 - Init COMPLETE
+4ebf64dcfb814391b20452c5eacea59200001W:696112:696177 [3] NCCL INFO comm 0xa409020 rank 3 nranks 4 cudaDev 3 nvmlDev 7 busId 800000 commId 0x23c605672137ad06 - Init COMPLETE
+4ebf64dcfb814391b20452c5eacea59200001W:696109:696175 [0] NCCL INFO comm 0x9523a10 rank 0 nranks 4 cudaDev 0 nvmlDev 4 busId 500000 commId 0x23c605672137ad06 - Init COMPLETE
+4ebf64dcfb814391b20452c5eacea59200001W:696110:696181 [1] NCCL INFO comm 0xb12c8e0 rank 1 nranks 4 cudaDev 1 nvmlDev 5 busId 600000 commId 0x23c605672137ad06 - Init COMPLETE
+/opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
 /opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-/opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
-  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
-/opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
-  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
 wandb: Tracking run with wandb version 0.19.9
 wandb: W&B syncing is set to `offline` in this directory.  
 wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
-2025-04-12 16:19:30,366 - train_t2i.py - autoencoder:
+2025-04-13 11:37:58,718 - train_t2i.py - autoencoder:
   pretrained_path: /storage/v-jinpewang/lab_folder/qisheng_data/assets/stable-diffusion/autoencoder_kl.pth
   scale_factor: 0.2301
 ckpt_root: /storage/v-jinpewang/lab_folder/qisheng_data/workdir/t2i_training_demo/default/ckpts
@@ -266,16 +266,16 @@ z_shape: !!python/tuple
 - 32
 - 32
 
-2025-04-12 16:19:30,376 - train_t2i.py - Run on 4 devices
+2025-04-13 11:37:58,728 - train_t2i.py - Run on 4 devices
 Prepare dataset...
 Prepare dataset ok
 /opt/conda/envs/crossflow/lib/python3.8/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
 TransEncoder no compressor!
-2025-04-12 16:19:43,780 - factory.py - Loaded ViT-L-16-SigLIP-256 model config.
+2025-04-13 11:38:12,061 - factory.py - Loaded ViT-L-16-SigLIP-256 model config.
 成功加载基础参数，检测到 0 个adapter参数需要初始化
 TransEncoder no compressor!
-2025-04-12 16:20:08,715 - factory.py - Loaded ViT-L-16-SigLIP-256 model config.
+2025-04-13 11:38:36,138 - factory.py - Loaded ViT-L-16-SigLIP-256 model config.
 params_decay 1846
 params_nodecay 342
 train_state.nnet: MRModel(
@@ -1895,15 +1895,9 @@ making attention of type 'vanilla' with 512 in_channels
 Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
 making attention of type 'vanilla' with 512 in_channels
 Using Janus-Pro-1B
-2025-04-12 16:20:26,885 - train_t2i.py - Start fitting, step=0, mixed_precision=fp16
-epoch:   0%|          | 0/2500 [00:00<?, ?it/s]/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([1024])
-  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
-/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([67584])
-  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
-/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([512])
-  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
-/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
-  warnings.warn(
+2025-04-13 11:38:53,539 - train_t2i.py - Start fitting, step=0, mixed_precision=fp16
+epoch:   0%|          | 0/2500 [00:00<?, ?it/s]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
 /storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([1024])
   warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
 /storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([67584])
@@ -1928,6 +1922,14 @@ Using Janus-Pro-1B
   warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
 /opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
   warnings.warn(
+/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([1024])
+  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
+/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([67584])
+  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
+/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/sigmoid/kernel.py:30: UserWarning: Using slower tdp_torch implementation for a tensor with shape torch.Size([512])
+  warnings.warn(f'Using slower tdp_torch implementation for a tensor with shape {param0.shape}')
+/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
 /opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/autograd/__init__.py:251: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
 grad.sizes() = [512, 1, 7, 7], strides() = [49, 1, 7, 1]
 bucket_view.sizes() = [512, 1, 7, 7], strides() = [49, 49, 7, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:320.)
@@ -1944,7 +1946,19 @@ bucket_view.sizes() = [512, 1, 7, 7], strides() = [49, 49, 7, 1] (Triggered inte
 grad.sizes() = [512, 1, 7, 7], strides() = [49, 1, 7, 1]
 bucket_view.sizes() = [512, 1, 7, 7], strides() = [49, 49, 7, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:320.)
   Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-epoch:   0%|          | 1/2500 [00:53<37:14:46, 53.66s/it]epoch:   0%|          | 2/2500 [00:55<16:05:00, 23.18s/it]epoch:   0%|          | 3/2500 [00:56<8:59:55, 12.97s/it] epoch:   0%|          | 4/2500 [00:57<5:40:08,  8.18s/it]epoch:   0%|          | 5/2500 [00:57<3:49:26,  5.52s/it]epoch:   0%|          | 6/2500 [00:59<2:48:14,  4.05s/it]Traceback (most recent call last):
+epoch:   0%|          | 1/2500 [00:53<36:48:06, 53.02s/it]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+epoch:   0%|          | 2/2500 [00:55<15:58:04, 23.01s/it]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+epoch:   0%|          | 3/2500 [00:55<8:56:08, 12.88s/it] 通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+epoch:   0%|          | 4/2500 [00:56<5:37:57,  8.12s/it]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+epoch:   0%|          | 5/2500 [00:57<3:48:32,  5.50s/it]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+epoch:   0%|          | 6/2500 [00:58<2:48:03,  4.04s/it]通过VAE之前的shape: torch.Size([1, 77, 768])
+通过VAE之后的shape: torch.Size([1, 8192])
+Traceback (most recent call last):
   File "train_t2i.py", line 362, in <module>
     app.run(main)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/absl/app.py", line 316, in run
@@ -1981,7 +1995,7 @@ bucket_view.sizes() = [512, 1, 7, 7], strides() = [49, 49, 7, 1] (Triggered inte
     return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 454, in forward
+  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 455, in forward
     return self._forward(images = x, log_snr = log_snr, null_indicator=null_indicator)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 400, in _forward
     output, lowres_skips = stage(images, lowres_skips = lowres_skips, condition_context = condition_context, condition_embeds = condition_embeds, condition_masks = condition_masks, null_indicator=null_indicator)
@@ -2010,37 +2024,31 @@ bucket_view.sizes() = [512, 1, 7, 7], strides() = [49, 49, 7, 1] (Triggered inte
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/utils/checkpoint.py", line 230, in forward
     outputs = run_function(*args)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 178, in _forward
+Traceback (most recent call last):
     x = x + self.dropout(self.block2(x))
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+  File "train_t2i.py", line 362, in <module>
+    app.run(main)
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/absl/app.py", line 316, in run
+    _run_main(main, args)
     return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/absl/app.py", line 261, in _run_main
+    sys.exit(main(argv))
+  File "train_t2i.py", line 358, in main
+    train(config)
     return forward_call(*args, **kwargs)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 97, in forward
+  File "train_t2i.py", line 259, in train
+    metrics = train_step(batch, ss_empty_context)
+  File "train_t2i.py", line 174, in train_step
+    loss, loss_dict = _flow_mathcing_model(_z, nnet, loss_coeffs=config.loss_coeffs, cond=_batch_con, con_mask=_batch_mask, batch_img_clip=_batch_img_ori, \
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
     x = self.w2(x)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
-    return F.linear(input, self.weight, self.bias)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 33.38 MiB is free. Process 1182461 has 31.70 GiB memory in use. Of the allocated memory 30.96 GiB is allocated by PyTorch, and 5.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Traceback (most recent call last):
-  File "train_t2i.py", line 362, in <module>
-    app.run(main)
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/absl/app.py", line 316, in run
-    _run_main(main, args)
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/absl/app.py", line 261, in _run_main
-    sys.exit(main(argv))
-  File "train_t2i.py", line 358, in main
-    train(config)
-  File "train_t2i.py", line 259, in train
-    metrics = train_step(batch, ss_empty_context)
-  File "train_t2i.py", line 174, in train_step
-    loss, loss_dict = _flow_mathcing_model(_z, nnet, loss_coeffs=config.loss_coeffs, cond=_batch_con, con_mask=_batch_mask, batch_img_clip=_batch_img_ori, \
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/diffusion/flow_matching.py", line 339, in forward
     return self.p_losses_textVAE(
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/diffusion/flow_matching.py", line 424, in p_losses_textVAE
@@ -2049,8 +2057,10 @@ Traceback (most recent call last):
     return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
+    return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/accelerate/utils/operations.py", line 507, in __call__
     return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
     return func(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
@@ -2059,9 +2069,13 @@ Traceback (most recent call last):
     return self.module(*inputs, **kwargs)  # type: ignore[index]
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
     return self._call_impl(*args, **kwargs)
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 454, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 2 has a total capacty of 31.74 GiB of which 33.38 MiB is free. Process 1308231 has 31.70 GiB memory in use. Of the allocated memory 30.96 GiB is allocated by PyTorch, and 5.59 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 455, in forward
     return self._forward(images = x, log_snr = log_snr, null_indicator=null_indicator)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 400, in _forward
     output, lowres_skips = stage(images, lowres_skips = lowres_skips, condition_context = condition_context, condition_embeds = condition_embeds, condition_masks = condition_masks, null_indicator=null_indicator)
@@ -2103,7 +2117,7 @@ Traceback (most recent call last):
     return forward_call(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
     return F.linear(input, self.weight, self.bias)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 5.38 MiB is free. Process 1182460 has 31.73 GiB memory in use. Of the allocated memory 31.02 GiB is allocated by PyTorch, and 8.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 13.38 MiB is free. Process 1308229 has 31.72 GiB memory in use. Of the allocated memory 30.99 GiB is allocated by PyTorch, and 9.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
 Traceback (most recent call last):
   File "train_t2i.py", line 362, in <module>
     app.run(main)
@@ -2141,7 +2155,7 @@ Traceback (most recent call last):
     return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 454, in forward
+  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 455, in forward
     return self._forward(images = x, log_snr = log_snr, null_indicator=null_indicator)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 400, in _forward
     output, lowres_skips = stage(images, lowres_skips = lowres_skips, condition_context = condition_context, condition_embeds = condition_embeds, condition_masks = condition_masks, null_indicator=null_indicator)
@@ -2183,7 +2197,7 @@ Traceback (most recent call last):
     return forward_call(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
     return F.linear(input, self.weight, self.bias)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacty of 31.74 GiB of which 13.38 MiB is free. Process 1182459 has 31.72 GiB memory in use. Of the allocated memory 30.99 GiB is allocated by PyTorch, and 9.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 1 has a total capacty of 31.74 GiB of which 5.38 MiB is free. Process 1308230 has 31.73 GiB memory in use. Of the allocated memory 31.02 GiB is allocated by PyTorch, and 8.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
 Traceback (most recent call last):
   File "train_t2i.py", line 362, in <module>
     app.run(main)
@@ -2221,7 +2235,7 @@ Traceback (most recent call last):
     return self._call_impl(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
     return forward_call(*args, **kwargs)
-  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 454, in forward
+  File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 455, in forward
     return self._forward(images = x, log_snr = log_snr, null_indicator=null_indicator)
   File "/storage/v-jinpewang/lab_folder/qisheng_azure/CrossFlow/libs/model/dimr_t2i.py", line 400, in _forward
     output, lowres_skips = stage(images, lowres_skips = lowres_skips, condition_context = condition_context, condition_embeds = condition_embeds, condition_masks = condition_masks, null_indicator=null_indicator)
@@ -2263,12 +2277,12 @@ Traceback (most recent call last):
     return forward_call(*args, **kwargs)
   File "/opt/conda/envs/crossflow/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 114, in forward
     return F.linear(input, self.weight, self.bias)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 9.38 MiB is free. Process 1182462 has 31.73 GiB memory in use. Of the allocated memory 30.99 GiB is allocated by PyTorch, and 9.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 3 has a total capacty of 31.74 GiB of which 9.38 MiB is free. Process 1308232 has 31.73 GiB memory in use. Of the allocated memory 30.99 GiB is allocated by PyTorch, and 9.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
 [1;34mwandb[0m: 
 [1;34mwandb[0m: You can sync this run to the cloud by running:
-[1;34mwandb[0m: [1mwandb sync /storage/v-jinpewang/lab_folder/qisheng_data/workdir/t2i_training_demo/default/wandb/offline-run-20250412_161928-7256021883.54740-a4fd6b79-1f6c-477f-87b6-9e0c013335a9[0m
-[1;34mwandb[0m: Find logs at: [1;35m../../qisheng_data/workdir/t2i_training_demo/default/wandb/offline-run-20250412_161928-7256021883.54740-a4fd6b79-1f6c-477f-87b6-9e0c013335a9/logs[0m
-[2025-04-12 16:22:10,620] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 692745) of binary: /opt/conda/envs/crossflow/bin/python
+[1;34mwandb[0m: [1mwandb sync /storage/v-jinpewang/lab_folder/qisheng_data/workdir/t2i_training_demo/default/wandb/offline-run-20250413_113756-7256021883.54740-a4fd6b79-1f6c-477f-87b6-9e0c013335a9[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../qisheng_data/workdir/t2i_training_demo/default/wandb/offline-run-20250413_113756-7256021883.54740-a4fd6b79-1f6c-477f-87b6-9e0c013335a9/logs[0m
+[2025-04-13 11:40:38,785] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 696109) of binary: /opt/conda/envs/crossflow/bin/python
 Traceback (most recent call last):
   File "/opt/conda/envs/crossflow/bin/torchrun", line 8, in <module>
     sys.exit(main())
@@ -2288,33 +2302,33 @@ train_t2i.py FAILED
 ------------------------------------------------------------
 Failures:
 [1]:
-  time      : 2025-04-12_16:22:10
+  time      : 2025-04-13_11:40:38
   host      : 4ebf64dcfb814391b20452c5eacea59200001w.internal.cloudapp.net
   rank      : 1 (local_rank: 1)
-  exitcode  : 1 (pid: 692746)
+  exitcode  : 1 (pid: 696110)
   error_file: <N/A>
   traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
 [2]:
-  time      : 2025-04-12_16:22:10
+  time      : 2025-04-13_11:40:38
   host      : 4ebf64dcfb814391b20452c5eacea59200001w.internal.cloudapp.net
   rank      : 2 (local_rank: 2)
-  exitcode  : 1 (pid: 692747)
+  exitcode  : 1 (pid: 696111)
   error_file: <N/A>
   traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
 [3]:
-  time      : 2025-04-12_16:22:10
+  time      : 2025-04-13_11:40:38
   host      : 4ebf64dcfb814391b20452c5eacea59200001w.internal.cloudapp.net
   rank      : 3 (local_rank: 3)
-  exitcode  : 1 (pid: 692748)
+  exitcode  : 1 (pid: 696112)
   error_file: <N/A>
   traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
 ------------------------------------------------------------
 Root Cause (first observed failure):
 [0]:
-  time      : 2025-04-12_16:22:10
+  time      : 2025-04-13_11:40:38
   host      : 4ebf64dcfb814391b20452c5eacea59200001w.internal.cloudapp.net
   rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 692745)
+  exitcode  : 1 (pid: 696109)
   error_file: <N/A>
   traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
 ============================================================

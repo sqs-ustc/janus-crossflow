@@ -417,7 +417,8 @@ class MRModel(nn.Module):
     def _text_encoder(self, condition_context, tar_shape, mask):
 
         output = self.context_encoder(condition_context, mask)
-#        print("condition_context.shape:",condition_context.shape)
+        print("通过VAE之前的shape:",condition_context.shape)
+        print("通过VAE之后的shape:",output.shape)
         mu, log_var = torch.chunk(output, 2, dim=-1)
 
 

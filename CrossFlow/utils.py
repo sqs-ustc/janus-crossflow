@@ -218,8 +218,6 @@ def initialize_train_state(config, device):
 
     train_state = TrainState(optimizer=optimizer, lr_scheduler=lr_scheduler, step=0,
                              nnet=nnet, nnet_ema=nnet_ema)
-    print("train_state.nnet:",train_state.nnet)
-    print("train_state.nnet_ema:",train_state.nnet_ema)
     train_state.ema_update(0)
     train_state.to(device)
     return train_state
