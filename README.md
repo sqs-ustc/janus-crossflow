@@ -37,3 +37,7 @@ save_dir = f'/storage/v-jinpewang/lab_folder/qisheng_data/raw_text_image_dataset
 
 最终train文件夹包含img_img_pair.jsonl, render_imgs, imgs, features
 最终test文件夹包含img_img_pair.jsonl, run_vis（前一个py的这个存过来）, render_imgs, imgs, features
+
+训练启动命令
+CUDA_VISIBLE_DEVICES=4,5,6,7 accelerate launch --main_process_port 16663 --multi_gpu --num_processes 4 --num_machines 1 --mixed_precision fp16 train_t2i.py --config=configs/t2i_training_demo.py 2>&1 | tee log.txt
+
