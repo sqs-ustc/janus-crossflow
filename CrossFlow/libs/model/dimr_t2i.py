@@ -309,9 +309,9 @@ class MRModel(nn.Module):
         self.block_grad_to_lowres = config.block_grad_to_lowres
         ########### 新增适配层 ###########
 
-#        self.adapter =  nn.Sequential(
-#        nn.Linear(config.adapter_in_embed, config.clip_dim),
-#    )
+        self.adapter =  nn.Sequential(
+        nn.Linear(config.adapter_in_embed, config.clip_dim),
+    )
 
         # nn.Linear(77*2048, 77*768), 全连接降维 [B, 77*2048]输入  [B, 77*768]输出
         ###############################
@@ -417,8 +417,8 @@ class MRModel(nn.Module):
     def _text_encoder(self, condition_context, tar_shape, mask):
 
         output = self.context_encoder(condition_context, mask)
-        print("通过VAE之前的shape:",condition_context.shape)
-        print("通过VAE之后的shape:",output.shape)
+#        print("通过VAE之前的shape:",condition_context.shape)
+#        print("通过VAE之后的shape:",output.shape)
         mu, log_var = torch.chunk(output, 2, dim=-1)
 
 
@@ -444,7 +444,7 @@ class MRModel(nn.Module):
     def forward(self, x, t = None, log_snr = None, text_encoder=False, text_decoder=False, image_clip=False, shape=None, mask=None, null_indicator=None):
         if text_encoder:
             # 应用适配层 [B, 77, 2048] → [B, 77, 768]
-            adapted_cond = x #self.adapter(x)
+            adapted_cond = self.adapter(x)
             return self._text_encoder(condition_context = adapted_cond, tar_shape=shape, mask=mask)
         elif text_decoder:
             return self._text_decoder(condition_enbedding = x, tar_shape=shape) # mask is not needed for decoder

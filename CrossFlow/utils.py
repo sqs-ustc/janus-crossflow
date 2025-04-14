@@ -186,6 +186,11 @@ def initialize_train_state(config, device):
     try:
         # 加载模型参数
         state_dict = torch.load(config.pretrained_path, map_location='cpu')
+
+#        filtered_dict = {
+#            k: v for k, v in state_dict.items()
+#            if not k.startswith("context_encoder.")
+#        }
         
         # 非严格模式加载（允许参数不匹配）
         load_result = nnet.load_state_dict(state_dict, strict=False)
@@ -199,9 +204,9 @@ def initialize_train_state(config, device):
         else:
             print(f"警告：存在预期外的缺失参数 {set(missing_keys) - set(adapter_keys)}")
 
-#        nn.init.xavier_uniform_(nnet.adapter[0].weight)
+        nn.init.xavier_uniform_(nnet.adapter[0].weight)
 #        nn.init.xavier_uniform_(nnet.adapter[1].weight)
-#        print("Adapter layer initialized")
+        print("Adapter layer initialized")
 
 
     except FileNotFoundError:
